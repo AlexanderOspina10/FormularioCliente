@@ -12,6 +12,8 @@ form {
   label{
     display: block;
     margin: 10px 0;
+    align-items: center;
+    justify-content: center;
   }
   
   #btnEnviar {
@@ -28,3 +30,4 @@ form {
     max-width: 100%;
     margin: 20px auto;
   }
+  

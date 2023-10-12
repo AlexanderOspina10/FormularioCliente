@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="">
+
+
+    <label for="">Producto:</label>
+    <select name="" id="producto">
+        <option value="">Seleccione el producto</option>
+        <option value="111">Aceite</option>
+        <option value="222">Agua</option>
+        <option value="333">Azucar</option>
+    </select>
+    <br>
+    <label for="">Precio</label>
+    <input type="text" name="precio" min="0" id="precio" oninput="">
+    <br>
+    <label for="">Cantidad</label>
+    <input type="text" name="cantidad" min="0" id="cantidad" onkeyup="calcularSubtotal()"  onkeydown="calcularSubtotal()" onkeypress="">
+    <br>
+    <label for="">Subtotal</label>
+    <input type="text" name="subtotal" readonly id="subtotal">
+    <br>
+
+    <button id="btncalcular">CALCULAR</button>
+    <button id="btnlimpiar">LIMPIAR</button>
+    
+    <script src="/validaciones2/js/funciones.js"></script>
+
+    </form>
+    
+</body>
+</html>

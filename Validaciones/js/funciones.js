@@ -6,19 +6,46 @@ const ValidarCliente = ()=>{
     let telefono = document.querySelector('#telefono')
 
     if(documento.value.length== 0){
-        alert("El documento esta vacio. VERIFIQUE")
+        // alert("El documento esta vacio. VERIFIQUE")
+        Swal.fire(
+            'El documento esta vacio. VERIFIQUE',
+            '',
+            'error'
+          )
     }
     else if(nombres.value.length== 0){
-        alert("El nombre esta vacio. VERIFIQUE")
+         // alert("El documento esta vacio. VERIFIQUE")
+        Swal.fire(
+            'El nombre esta vacio. VERIFIQUE',
+            '',
+            'error'
+          )
     }
     else if(direccion.value.length== 0){
-        alert("La dirección esta vacia. VERIFIQUE")
+         // alert("El documento esta vacio. VERIFIQUE")
+        Swal.fire(
+            'la direccion esta vacia. VERIFIQUE',
+            '',
+            'error'
+          )
     }
     else if(telefono.value.length== 0){
-        alert("El telefono esta vacio. VERIFIQUE")
+         // alert("El documento esta vacio. VERIFIQUE")
+        Swal.fire(
+            'El telefono esta vacio. VERIFIQUE',
+            '',
+            'error'
+          )
     }
     else{
-        alert("DATOS ENVIADOS CORRECTAMENTE")
+        // alert("DATOS ENVIADOS CORRECTAMENTE")
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Datos enviados correctamente',
+            showConfirmButton: false,
+            timer: 2500
+          })
     }
 }
 
